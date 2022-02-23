@@ -1,0 +1,105 @@
+.container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+}
+.site{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.site__title{
+  margin: 50px 0;
+  color: red;
+  font-size: 35px;
+  animation-name: title;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  text-align: center;
+
+}
+
+.site__input{
+  padding: 10px 0;
+  border-radius: 5px;
+  border-color: #ff0000;
+  position: relative;
+  animation-name: result;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  text-align: center;
+
+}
+
+.site__select{
+  width: 80px;
+  margin: 0 30px;
+  padding: 10px 0;
+  text-align: center;
+  border-color: #ff0000;
+  position: relative;
+  animation-name: result;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.site__select:hover{
+  cursor: pointer;
+}
+
+
+
+.site__btn{
+  width: 100px;
+  padding: 10px 5px;
+  border-color: #ff0000;
+  position: relative;
+  animation-name: result;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+}
+
+.site__btn:hover{
+  cursor: pointer;
+}
+
+
+
+.site__result{
+
+  margin-left: 30px;
+  padding: 10px 80px;
+  border: 2px solid;
+  border-color: #ff0000;
+  position: relative;
+  animation-name: result;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border-radius: 5px;
+}
+
+@keyframes result {
+  0%   {border-color:#ff0000;}
+  25%  {border-color:#ffff00;}
+  50%  {border-color:#0000ff; }
+  75%  {border-color:#008000; }
+  100% {border-color:#ff0000; }
+}
+
+@keyframes title {
+  0%   {color:#ff0000;}
+  25%  {color:#ffff00;}
+  50%  {color:#0000ff; }
+  75%  {color:#008000; }
+  100% {color:#ff0000; }
+}
+
+
+
+
+
+}
